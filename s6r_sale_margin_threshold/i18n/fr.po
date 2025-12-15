@@ -1,0 +1,118 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* s6r_sale_margin_threshold
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-15 15:15+0000\n"
+"PO-Revision-Date: 2025-12-15 15:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: s6r_sale_margin_threshold
+#. odoo-python
+#: code:addons/s6r_sale_margin_threshold/models/sale_order_line.py:0
+msgid ""
+"%(product)s: The margin (%(margin_percent).2f%%) is less than the minimum "
+"allowed margin (%(min_margin).2f%%)."
+msgstr ""
+"%(product)s : la marge (%(margin_percent).2f%%) est inférieure à "
+"la marge minimale autorisée (%(min_margin).2f%%)."
+
+#. module: s6r_sale_margin_threshold
+#: model:ir.model.fields,field_description:s6r_sale_margin_threshold.field_res_company__blocking_transaction_order
+#: model:ir.model.fields,field_description:s6r_sale_margin_threshold.field_res_config_settings__blocking_transaction_order
+msgid "Block Sales Orders Below Minimum Margin"
+msgstr "Bloquer les commandes de vente en dessous de la marge minimale"
+
+#. module: s6r_sale_margin_threshold
+#: model:ir.model,name:s6r_sale_margin_threshold.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: s6r_sale_margin_threshold
+#: model:ir.model,name:s6r_sale_margin_threshold.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: s6r_sale_margin_threshold
+#: model:ir.model.fields,help:s6r_sale_margin_threshold.field_res_config_settings__blocking_transaction_order
+msgid ""
+"If enabled, sales orders with margins below the minimum threshold cannot be "
+"confirmed or sent."
+msgstr ""
+"Si cette option est activée, les commandes de vente dont la marge est inférieure "
+"au seuil minimal ne peuvent pas être confirmées ni envoyées."
+
+#. module: s6r_sale_margin_threshold
+#. odoo-python
+#: code:addons/s6r_sale_margin_threshold/models/sale_order_line.py:0
+msgid "Insufficient margin"
+msgstr "Marge insuffisante"
+
+#. module: s6r_sale_margin_threshold
+#: model_terms:ir.ui.view,arch_db:s6r_sale_margin_threshold.res_config_settings_view_form_sale_margin
+msgid "Minimum Margin"
+msgstr "Marge minimale"
+
+#. module: s6r_sale_margin_threshold
+#: model:ir.model.fields,field_description:s6r_sale_margin_threshold.field_sale_order_line__minimum_margin_violation
+#: model_terms:ir.ui.view,arch_db:s6r_sale_margin_threshold.view_order_form_inherit
+#: model_terms:ir.ui.view,arch_db:s6r_sale_margin_threshold.view_sales_order_filter_inherit
+msgid "Minimum Margin Violation"
+msgstr "Violation de la marge minimale"
+
+#. module: s6r_sale_margin_threshold
+#: model:ir.model.fields,field_description:s6r_sale_margin_threshold.field_sale_order__minimum_margin_violation
+msgid "Minimum Margin Violation Error"
+msgstr "Erreur de violation de la marge minimale"
+
+#. module: s6r_sale_margin_threshold
+#: model:ir.model.fields,help:s6r_sale_margin_threshold.field_res_config_settings__sale_min_margin_percent
+msgid "Minimum allowed margin percentage per sales order line."
+msgstr "Pourcentage minimal de marge autorisé par ligne de commande de vente."
+
+#. module: s6r_sale_margin_threshold
+#: model:ir.model.fields,field_description:s6r_sale_margin_threshold.field_res_company__sale_min_margin_percent
+#: model:ir.model.fields,field_description:s6r_sale_margin_threshold.field_res_config_settings__sale_min_margin_percent
+msgid "Minimum margin (%)"
+msgstr "Marge minimale (%)"
+
+#. module: s6r_sale_margin_threshold
+#: model:ir.model.fields,help:s6r_sale_margin_threshold.field_res_company__sale_min_margin_percent
+msgid "Minimum margin percentage required to confirm or send a sales order."
+msgstr "Pourcentage minimal de marge requis pour confirmer ou envoyer une commande de vente."
+
+#. module: s6r_sale_margin_threshold
+#: model:ir.model,name:s6r_sale_margin_threshold.model_sale_order
+msgid "Sales Order"
+msgstr "Commande client"
+
+#. module: s6r_sale_margin_threshold
+#: model:ir.model,name:s6r_sale_margin_threshold.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Ligne de commande"
+
+#. module: s6r_sale_margin_threshold
+#. odoo-python
+#: code:addons/s6r_sale_margin_threshold/models/sale_order.py:0
+msgid ""
+"The operation cannot be completed because the following order lines have a margin below the allowed threshold:\n"
+"\n"
+"%(lines)s"
+msgstr ""
+"L’opération ne peut pas être effectuée car les lignes de commande suivantes ont une marge inférieure au seuil autorisé :\n"
+"\n"
+"%(lines)s"
+
+#. module: s6r_sale_margin_threshold
+#. odoo-python
+#: code:addons/s6r_sale_margin_threshold/models/sale_order.py:0
+msgid "- %(product)s: %(margin_percent).2f%% (minimum %(min_margin).2f%%)"
+msgstr "- %(product)s: %(margin_percent).2f%% (minimum %(min_margin).2f%%)"
