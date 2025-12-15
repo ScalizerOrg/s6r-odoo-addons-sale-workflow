@@ -15,8 +15,8 @@
     'category': 'Generic Modules/Scalizer',
     'complexity': 'easy',
     'description': '''
-        The Scalizer Margin Sale module calculates and enforces the minimum sale price and profit margin for each product. 
-        When a user attempts to sell a product below its minimum price in a sale order, 
+        The Scalizer Margin Sale module calculates and enforces the minimum sale price and profit margin for each product.
+        When a user attempts to sell a product below its minimum price in a sale order,
         the system triggers a warning, helping businesses maintain profitability and prevent underpricing.
         ''',
     'qweb': [
