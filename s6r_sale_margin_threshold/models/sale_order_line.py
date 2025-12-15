@@ -8,7 +8,6 @@ class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
 
     minimum_margin_violation = fields.Boolean(
-        string="Minimum Margin Violation",
         compute="_compute_minimum_margin_violation",
         store=True,
     )
