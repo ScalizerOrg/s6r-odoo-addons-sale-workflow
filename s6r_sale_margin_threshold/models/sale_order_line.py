@@ -18,7 +18,7 @@ class SaleOrderLine(models.Model):
                  "company_id.sale_min_margin_percent")
     def _compute_minimum_margin_violation(self):
         for line in self:
-            if not line.product_id or line.order_id.state == "cancel":
+            if not line.product_id or line.order_id.state not in ("draft", "sent"):
                 line.minimum_margin_violation = False
                 continue
             line.minimum_margin_violation = (
