@@ -5,7 +5,7 @@
     'version': '18.0.1.0.0',
     'author': 'Scalizer',
     'website': 'https://www.scalizer.fr',
-    'summary': "Ensure products are sold above their minimum price with margin checks in sale orders.",
+    'summary': "Ensure that products are sold only above their minimum profit margins in sales orders.",
     'sequence': 0,
     'certificate': '',
     'license': 'LGPL-3',
@@ -15,8 +15,8 @@
     'category': 'Generic Modules/Scalizer',
     'complexity': 'easy',
     'description': '''
-        The Scalizer Margin Sale module calculates and enforces the minimum sale price and profit margin for each product.
-        When a user attempts to sell a product below its minimum price in a sale order,
+        The Scalizer Margin Sale module calculates and enforces the minimum profit margin for each product.
+        When a user attempts to sell a product below its minimum margin in a sale order,
         the system triggers a warning, helping businesses maintain profitability and prevent underpricing.
         ''',
     'qweb': [
